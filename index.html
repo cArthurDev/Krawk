@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Krawk — Influencer Marketing, Performance & Acquisition para marcas e operadores no Brasil e LATAM.">
+<title>Krawk — Influencer & Performance Marketing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#07080c;--surface:#0d1017;--surface2:#11151e;--text:#f4f6fa;--muted:#9aa3b2;
+ --line:rgba(255,255,255,.09);--lime:#b8ff3d;--lime2:#d7ff91;--purple:#7370ff;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 80% 5%,rgba(115,112,255,.14),transparent 28%),radial-gradient(circle at 20% 35%,rgba(184,255,61,.07),transparent 24%);z-index:-1}
+a{text-decoration:none;color:inherit}.wrap{width:min(1180px,calc(100% - 42px));margin:auto}
+nav{height:84px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center}.brand img{display:block;height:64px;width:auto}
+.navlinks{display:flex;gap:28px;color:#b7becb;font-size:13px}.navlinks a:hover{color:var(--lime)}
+.right{display:flex;align-items:center;gap:10px}.lang{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px}.lang button{background:transparent;border:0;color:#8992a2;font:600 11px "DM Sans";padding:7px 10px;border-radius:999px;cursor:pointer}.lang button.active{background:#fff;color:#090a0e}
+.wa{border:1px solid rgba(184,255,61,.4);color:var(--lime);padding:10px 14px;border-radius:10px;font-size:12px;font-weight:700}.wa:hover{background:var(--lime);color:#0a0c09}
+.hero{min-height:690px;display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:70px;padding:72px 0}
+.badge{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:#cbd1db;font-size:11px;text-transform:uppercase;letter-spacing:1.4px}.badge b{width:7px;height:7px;background:var(--lime);border-radius:50%;box-shadow:0 0 16px var(--lime)}
+h1{font-family:"Space Grotesk";font-size:clamp(52px,7vw,88px);line-height:.94;letter-spacing:-5px;margin:22px 0 27px;max-width:850px}h1 span{color:var(--lime)}
+.lead{font-size:18px;line-height:1.65;color:var(--muted);max-width:650px}.buttons{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}.btn{padding:14px 19px;border-radius:11px;font-size:13px;font-weight:700;border:1px solid var(--line);display:inline-flex;align-items:center;gap:8px}.primary{background:var(--lime);border-color:var(--lime);color:#080a08}.primary:hover{background:#d1ff82}.ghost:hover{border-color:#60697a}
+.hero-art img{width:100%;height:auto;display:block}
+section{padding:105px 0;border-top:1px solid var(--line)}.head{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-bottom:44px}.eyebrow{color:var(--lime);font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase}.head h2{font:600 45px/1.02 "Space Grotesk";letter-spacing:-2.5px;margin:9px 0}.head p{color:var(--muted);line-height:1.7;max-width:500px;margin:0}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{min-height:245px;padding:27px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#10141c,#0b0e13);transition:.25s}.service:hover{transform:translateY(-4px);border-color:rgba(184,255,61,.3)}.num{font:600 12px "Space Grotesk";color:var(--lime)}.service h3{font:600 21px "Space Grotesk";margin:44px 0 10px}.service p{color:var(--muted);font-size:14px;line-height:1.65;margin:0}
+.brands{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.brandcard{height:150px;border:1px solid var(--line);border-radius:18px;background:#0b0d12;display:grid;place-items:center;padding:18px;overflow:hidden}.brandcard img{max-width:100%;max-height:100px;object-fit:contain;filter:saturate(.9)}.brandcard:nth-child(1) img{max-width:88%}.brandcard:nth-child(4) img{max-width:90%}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:18px;overflow:hidden}.stat{padding:28px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{font:600 30px "Space Grotesk";display:block}.stat span{font-size:12px;color:var(--muted)}
+.contact{border:1px solid rgba(184,255,61,.22);border-radius:25px;padding:65px;background:radial-gradient(circle at 90% 10%,rgba(184,255,61,.13),transparent 32%),linear-gradient(145deg,#12170e,#0c0f0b)}.contact h2{font:600 54px/1 "Space Grotesk";letter-spacing:-3px;max-width:760px;margin:10px 0 18px}.contact p{color:#aeb7a4;max-width:620px}.socials{display:flex;gap:10px;margin-top:25px;flex-wrap:wrap}.social{border:1px solid var(--line);padding:11px 14px;border-radius:10px;font-size:12px;color:#d0d5dd}.social:hover{border-color:var(--lime);color:var(--lime)}
+footer{padding:30px 0 40px;color:#727b89;font-size:11px;display:flex;justify-content:space-between;border-top:1px solid var(--line)}
+@media(max-width:900px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:55px 0}.head{grid-template-columns:1fr;gap:10px}.services{grid-template-columns:1fr 1fr}.brands{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media(max-width:600px){.wrap{width:min(100% - 28px,1180px)}nav{height:72px}.wa{display:none}h1{font-size:54px;letter-spacing:-3px}.services,.brands,.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.contact{padding:38px 24px}.contact h2{font-size:40px}.head h2{font-size:38px}footer{display:block}footer span{display:block;margin-top:7px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+<a class="brand" href="#"><img src="assets/logo.png" alt="Krawk"></a>
+<div class="navlinks">
+<a href="#services" data-pt="Serviços" data-en="Services">Serviços</a>
+<a href="#brands" data-pt="Marcas" data-en="Brands">Marcas</a>
+<a href="#about" data-pt="Experiência" data-en="Experience">Experiência</a>
+<a href="#contact" data-pt="Contato" data-en="Contact">Contato</a>
+</div>
+<div class="right">
+<div class="lang"><button class="active" onclick="setLang('pt')">PT</button><button onclick="setLang('en')">EN</button></div>
+<a class="wa" href="https://wa.me/5500000000000" target="_blank">WhatsApp ↗</a>
+</div>
+</nav>
+
+<section class="hero" style="border-top:0">
+<div>
+<div class="badge"><b></b><span data-pt="Influencer & Performance Marketing" data-en="Influencer & Performance Marketing">Influencer & Performance Marketing</span></div>
+<h1 data-pt="Atenção é boa. <span>Conversão</span> é melhor." data-en="Attention is good. <span>Conversion</span> is better.">Atenção é boa. <span>Conversão</span> é melhor.</h1>
+<p class="lead" data-pt="Eu conecto marcas e operadores a audiências reais através de creators, campanhas de aquisição, lives e estratégias de performance para Brasil e América Latina." data-en="I connect brands and operators with real audiences through creators, acquisition campaigns, live activations and performance strategies across Brazil and Latin America.">Eu conecto marcas e operadores a audiências reais através de creators, campanhas de aquisição, lives e estratégias de performance para Brasil e América Latina.</p>
+<div class="buttons"><a class="btn primary" href="#contact" data-pt="Vamos trabalhar juntos →" data-en="Let's work together →">Vamos trabalhar juntos →</a><a class="btn ghost" href="#services" data-pt="Ver serviços" data-en="View services">Ver serviços</a></div>
+</div>
+<div class="hero-art">
+<img src="assets/krawk.png" alt="Krawk">
+</div>
+</section>
+
+<section id="services">
+<div class="head"><div><div class="eyebrow" data-pt="O que eu faço" data-en="What I do">O que eu faço</div><h2 data-pt="Estratégia, creators e performance." data-en="Strategy, creators and performance.">Estratégia, creators e performance.</h2></div><p data-pt="Uma operação focada em transformar audiência em ação, com formatos adaptados ao objetivo de cada marca." data-en="An operation focused on turning audience into action, with formats adapted to each brand's objective.">Uma operação focada em transformar audiência em ação, com formatos adaptados ao objetivo de cada marca.</p></div>
+<div class="services">
+<div class="service"><div class="num">01</div><h3 data-pt="Influencer Marketing" data-en="Influencer Marketing">Influencer Marketing</h3><p data-pt="Seleção, negociação e ativação de creators alinhados ao público e ao objetivo da campanha." data-en="Creator selection, negotiation and activation aligned with the audience and campaign objective.">Seleção, negociação e ativação de creators alinhados ao público e ao objetivo da campanha.</p></div>
+<div class="service"><div class="num">02</div><h3 data-pt="Aquisição & Performance" data-en="Acquisition & Performance">Aquisição & Performance</h3><p data-pt="Campanhas orientadas a conversão, com acompanhamento de métricas e otimização contínua." data-en="Conversion-focused campaigns with KPI tracking and continuous optimization.">Campanhas orientadas a conversão, com acompanhamento de métricas e otimização contínua.</p></div>
+<div class="service"><div class="num">03</div><h3 data-pt="Lives & Ativações" data-en="Live Activations">Lives & Ativações</h3><p data-pt="Integrações e transmissões com creators para gerar atenção, interação e ação em tempo real." data-en="Creator integrations and live broadcasts designed to generate attention, interaction and action in real time.">Integrações e transmissões com creators para gerar atenção, interação e ação em tempo real.</p></div>
+<div class="service"><div class="num">04</div><h3 data-pt="Estratégia LATAM" data-en="LATAM Strategy">Estratégia LATAM</h3><p data-pt="Campanhas pensadas para Brasil e outros mercados da América Latina, respeitando o comportamento local." data-en="Campaigns designed for Brazil and other Latin American markets, adapted to local behavior.">Campanhas pensadas para Brasil e outros mercados da América Latina, respeitando o comportamento local.</p></div>
+<div class="service"><div class="num">05</div><h3 data-pt="Negociação Comercial" data-en="Commercial Partnerships">Negociação Comercial</h3><p data-pt="Estruturação de propostas, testes, formatos de parceria e modelos comerciais." data-en="Proposal structuring, tests, partnership formats and commercial models.">Estruturação de propostas, testes, formatos de parceria e modelos comerciais.</p></div>
+<div class="service"><div class="num">06</div><h3 data-pt="Gestão de Campanha" data-en="Campaign Management">Gestão de Campanha</h3><p data-pt="Coordenação de creators, entregas, comunicação e acompanhamento do desempenho." data-en="Creator coordination, deliverables, communication and performance tracking.">Coordenação de creators, entregas, comunicação e acompanhamento do desempenho.</p></div>
+</div>
+</section>
+
+<section id="brands">
+<div class="head"><div><div class="eyebrow" data-pt="Marcas & campanhas" data-en="Brands & campaigns">Marcas & campanhas</div><h2 data-pt="Experiência em operações digitais." data-en="Experience in digital operations.">Experiência em operações digitais.</h2></div><p data-pt="Algumas das marcas e operações presentes no meu portfólio de campanhas." data-en="Selected brands and operations represented in my campaign portfolio.">Algumas das marcas e operações presentes no meu portfólio de campanhas.</p></div>
+<div class="brands">
+<div class="brandcard"><img src="assets/rainbet.png" alt="Rainbet"></div>
+<div class="brandcard"><img src="assets/borawin.png" alt="BoraWin"></div>
+<div class="brandcard"><img src="assets/21com.png" alt="21.com"></div>
+<div class="brandcard"><img src="assets/onebet.png" alt="One Bet"></div>
+<div class="brandcard"><img src="assets/sg-jogo.png" alt="SG Jogo"></div>
+</div>
+</section>
+
+<section id="about">
+<div class="head"><div><div class="eyebrow" data-pt="Experiência" data-en="Experience">Experiência</div><h2 data-pt="Foco em execução e resultado." data-en="Focused on execution and results.">Foco em execução e resultado.</h2></div><p data-pt="Cada projeto começa com um objetivo claro, passa por um teste controlado e evolui a partir dos dados da campanha." data-en="Every project starts with a clear objective, goes through a controlled test and evolves based on campaign data.">Cada projeto começa com um objetivo claro, passa por um teste controlado e evolui a partir dos dados da campanha.</p></div>
+<div class="stats">
+<div class="stat"><strong>BR + LATAM</strong><span data-pt="Mercado de atuação" data-en="Target market">Mercado de atuação</span></div>
+<div class="stat"><strong>CREATORS</strong><span data-pt="Rede de influenciadores" data-en="Influencer network">Rede de influenciadores</span></div>
+<div class="stat"><strong>LIVE</strong><span data-pt="Ativações em tempo real" data-en="Real-time activations">Ativações em tempo real</span></div>
+<div class="stat"><strong>ROI</strong><span data-pt="Foco em performance" data-en="Performance focus">Foco em performance</span></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact">
+<div class="eyebrow" data-pt="Vamos conversar" data-en="Let's talk">Vamos conversar</div>
+<h2 data-pt="Sua marca. Minha audiência. Uma campanha para medir." data-en="Your brand. My audience. A campaign built to measure.">Sua marca. Minha audiência. Uma campanha para medir.</h2>
+<p data-pt="Envie seu briefing e vamos conversar sobre creators, formatos, metas e uma estrutura de teste para sua campanha." data-en="Send your brief and let's talk about creators, formats, goals and a test structure for your campaign.">Envie seu briefing e vamos conversar sobre creators, formatos, metas e uma estrutura de teste para sua campanha.</p>
+<div class="buttons"><a class="btn primary" href="https://wa.me/5500000000000" target="_blank" data-pt="Falar no WhatsApp →" data-en="Chat on WhatsApp →">Falar no WhatsApp →</a><a class="btn ghost" href="https://t.me/krawkmrp" target="_blank">Telegram @krawkmrp ↗</a></div>
+<div class="socials"><a class="social" href="https://instagram.com/jefln" target="_blank">Instagram · @jefln</a><a class="social" href="https://t.me/krawkmrp" target="_blank">Telegram · @krawkmrp</a></div>
+</div>
+</section>
+</main>
+<footer><span>© 2026 Krawk. All rights reserved.</span><span>Influencer Marketing · Performance · LATAM</span></footer>
+</div>
+<script>
+function setLang(lang){
+ document.documentElement.lang=lang==='pt'?'pt-BR':'en';
+ document.querySelectorAll('[data-pt]').forEach(el=>{
+   el.innerHTML=el.getAttribute('data-'+lang);
+ });
+ document.querySelectorAll('.lang button').forEach(b=>b.classList.remove('active'));
+ document.querySelector('.lang button:nth-child('+(lang==='pt'?1:2)+')').classList.add('active');
+ localStorage.setItem('krawk_lang',lang);
+}
+setLang(localStorage.getItem('krawk_lang')||'pt');
+</script>
+</body>
+</html>
